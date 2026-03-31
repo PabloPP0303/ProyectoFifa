@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MiEquipoFIFA</string>
+    <string name="logo_de_la_aplicacion">Logo de la aplicacion</string>
+    <string name="nombre">Pablo Pérez Palacín</string>
+    <string name="asignatura">Proyecto Final Módulo PMDM</string>
+    <string name="curso">Curso: 2025-2026</string>
+    <string name="Instituto">IES Laguna de Tollón</string>
+    <string name="nombreApp">Mi Equipo Fifa</string>
+    <string name="laliga">LaLiga</string>
+    <string name="esp">España</string>
+    <string name="premier_league">Premier League</string>
+    <string name="inglaterra">Inglaterra</string>
+    <string name="logo_laliga">Logo LaLiga</string>
+    <string name="logopremier">LogoPremier</string>
+    <string name="miEquipo">Mi Equipo</string>
+    <string name="selecciona_una_liga">Selecciona una Liga</string>
+    <string name="contJugadores">Jugadores: 0/11</string>
+    <string name="miOnce">MI ONCE IDEAL</string>
+    <string name="jugadores_de">Jugadores de</string>
+</resources>
