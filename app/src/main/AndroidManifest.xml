@@ -31,6 +31,10 @@
             android:name=".ListaJugadoresActivity"
             android:exported="false">
         </activity>
+        <activity
+            android:name=".DetalleJugadorActivity"
+            android:exported="false">
+        </activity>
     </application>
 
 </manifest>

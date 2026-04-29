@@ -9,7 +9,7 @@ object DataSource {
 
     fun getTodosLosJugadores(): List<Jugador> {
         return listOf<Jugador>(
-            Jugador(1, "Raphinha", "FC Barcelona", "LaLiga", "EI", 89, 91, 84, 85, 87, 53, 75, R.drawable.logoapp),
+            Jugador(1, "Raphinha", "FC Barcelona", "LaLiga", "EI", 89, 91, 84, 85, 87, 53, 75, R.drawable.jg_raphinha),
             Jugador(2, "Lamine Yamal", "FC Barcelona", "LaLiga", "ED", 89, 85, 81, 86, 90, 23, 53, R.drawable.logoapp),
             Jugador(3, "Pedri", "FC Barcelona", "LaLiga", "MC", 89, 77, 73, 85, 91, 78, 77, R.drawable.logoapp),
             Jugador(4, "Lewandowski", "FC Barcelona", "LaLiga", "DC", 88, 74, 89, 79, 85, 44, 84, R.drawable.logoapp),
@@ -25,7 +25,7 @@ object DataSource {
             Jugador(14, "Kylian Mbappé", "Real Madrid", "LaLiga", "DC", 91, 97, 90, 81, 92, 37, 76, R.drawable.logoapp),
             Jugador(15, "Jude Bellingham", "Real Madrid", "LaLiga", "MCO", 90, 80, 86, 83, 90, 78, 85, R.drawable.logoapp),
             Jugador(16, "Thibaut Courtois", "Real Madrid", "LaLiga", "POR", 89, 85, 89, 76, 90, 46, 88, R.drawable.logoapp),
-            Jugador(17, "Vinícius Jr.", "Real Madrid", "LaLiga", "EI", 89, 95, 84, 81, 91, 29, 69, R.drawable.jg_Vini),
+            Jugador(17, "Vinícius Jr.", "Real Madrid", "LaLiga", "EI", 89, 95, 84, 81, 91, 29, 69, R.drawable.jg_vini),
             Jugador(18, "Fede Valverde", "Real Madrid", "LaLiga", "MC", 89, 88, 84, 84, 84, 83, 85, R.drawable.logoapp),
             Jugador(19, "Antonio Rüdiger", "Real Madrid", "LaLiga", "DFC", 86, 79, 55, 72, 70, 84, 86, R.drawable.logoapp),
             Jugador(20, "Alexander-Arnold", "Real Madrid", "LaLiga", "LD", 86, 76, 72, 89, 80, 80, 74, R.drawable.logoapp),
@@ -50,7 +50,7 @@ object DataSource {
             Jugador(39, "Martin Ødegaard", "Arsenal", "Premier League", "MCO", 87, 68, 79, 88, 87, 67, 65, R.drawable.logoapp),
             Jugador(40, "Ben White", "Arsenal", "Premier League", "LD", 83, 70, 35, 75, 75, 83, 78, R.drawable.logoapp),
             Jugador(41, "Leandro Trossard", "Arsenal", "Premier League", "EI", 83, 80, 81, 80, 85, 30, 60, R.drawable.logoapp),
-            Jugador(42, "Eberechi Eze", "Arsenal", "Premier League", "MCO", 83, 74, 80, 81, 87, 50, 68, R.drawable.jg_Eze)
+            Jugador(42, "Eberechi Eze", "Arsenal", "Premier League", "MCO", 83, 74, 80, 81, 87, 50, 68, R.drawable.jg_eze)
 
         )
     }
