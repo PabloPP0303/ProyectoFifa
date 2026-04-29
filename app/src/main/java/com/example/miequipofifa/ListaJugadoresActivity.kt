@@ -3,6 +3,7 @@ package com.example.miequipofifa
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.miequipofifa.R
 
 class ListaJugadoresActivity : AppCompatActivity() {
 
