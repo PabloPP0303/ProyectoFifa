@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1a472a">
+    android:background="@color/verde_fondo">
 
     <TextView
         android:id="@+id/tituloEquipo"
@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:text="@string/miOnce"
-        android:textColor="#FFD700"
+        android:textColor="@color/dorado"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/contJugadores"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/blanco"
         app:layout_constraintTop_toBottomOf="@id/tituloEquipo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

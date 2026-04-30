@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1a472a">
+    android:background="@color/verde_fondo">
 
     <TextView
         android:id="@+id/nombreLiga"
@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/jugadores_de"
-        android:textColor="#FFD700"
+        android:textColor="@color/dorado"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Todos"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/blanco"
                 android:checked="true"
                 android:layout_marginEnd="8dp"/>
 
@@ -50,7 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="POR"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/blanco"
                 android:layout_marginEnd="8dp"/>
 
             <RadioButton
@@ -58,7 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="DEF"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/blanco"
                 android:layout_marginEnd="8dp"/>
 
             <RadioButton
@@ -66,7 +66,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="MED"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/blanco"
                 android:layout_marginEnd="8dp"/>
 
             <RadioButton
@@ -74,7 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ATQ"
-                android:textColor="#FFFFFF"/>
+                android:textColor="@color/blanco"/>
 
         </RadioGroup>
 

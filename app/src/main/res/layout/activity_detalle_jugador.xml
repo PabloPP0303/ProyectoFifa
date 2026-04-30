@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1a472a">
+    android:background="@color/verde_fondo">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="90"
-            android:textColor="#FFD700"
+            android:textColor="@color/dorado"
             android:textSize="48sp"
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/imgDetalleJugador"
@@ -44,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nombre Jugador"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/blanco"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/detalleValoracion"
@@ -57,7 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Club · Liga"
-            android:textColor="#AAFFAA"
+            android:textColor="@color/verde_claro"
             android:textSize="16sp"
             app:layout_constraintTop_toBottomOf="@id/detalleNombre"
             app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +70,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Posición"
-            android:textColor="#FFD700"
+            android:textColor="@color/dorado"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/detalleClub"
@@ -86,7 +86,7 @@
             android:layout_marginTop="16dp"
             app:cardCornerRadius="12dp"
             app:cardElevation="4dp"
-            app:cardBackgroundColor="#2d6a4f"
+            app:cardBackgroundColor="@color/verde_card"
             app:layout_constraintTop_toBottomOf="@id/detallePosicion"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
@@ -110,14 +110,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="RIT"
-                        android:textColor="#AAFFAA"
+                        android:textColor="@color/verde_claro"
                         android:textSize="12sp"/>
                     <TextView
                         android:id="@+id/ritmo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="00"
-                        android:textColor="#FFD700"
+                        android:textColor="@color/dorado"
                         android:textSize="24sp"
                         android:textStyle="bold"/>
                 </LinearLayout>
@@ -134,14 +134,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="TIR"
-                        android:textColor="#AAFFAA"
+                        android:textColor="@color/verde_claro"
                         android:textSize="12sp"/>
                     <TextView
                         android:id="@+id/tiro"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="00"
-                        android:textColor="#FFD700"
+                        android:textColor="@color/dorado"
                         android:textSize="24sp"
                         android:textStyle="bold"/>
                 </LinearLayout>
@@ -158,14 +158,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="PAS"
-                        android:textColor="#AAFFAA"
+                        android:textColor="@color/verde_claro"
                         android:textSize="12sp"/>
                     <TextView
                         android:id="@+id/pase"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="00"
-                        android:textColor="#FFD700"
+                        android:textColor="@color/dorado"
                         android:textSize="24sp"
                         android:textStyle="bold"/>
                 </LinearLayout>
@@ -182,14 +182,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="REG"
-                        android:textColor="#AAFFAA"
+                        android:textColor="@color/verde_claro"
                         android:textSize="12sp"/>
                     <TextView
                         android:id="@+id/regate"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="00"
-                        android:textColor="#FFD700"
+                        android:textColor="@color/dorado"
                         android:textSize="24sp"
                         android:textStyle="bold"/>
                 </LinearLayout>
@@ -206,14 +206,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="DEF"
-                        android:textColor="#AAFFAA"
+                        android:textColor="@color/verde_claro"
                         android:textSize="12sp"/>
                     <TextView
                         android:id="@+id/defensa"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="00"
-                        android:textColor="#FFD700"
+                        android:textColor="@color/dorado"
                         android:textSize="24sp"
                         android:textStyle="bold"/>
                 </LinearLayout>
@@ -230,14 +230,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="FIS"
-                        android:textColor="#AAFFAA"
+                        android:textColor="@color/verde_claro"
                         android:textSize="12sp"/>
                     <TextView
                         android:id="@+id/fisico"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="00"
-                        android:textColor="#FFD700"
+                        android:textColor="@color/dorado"
                         android:textSize="24sp"
                         android:textStyle="bold"/>
                 </LinearLayout>
@@ -253,8 +253,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Añadir a Mi Equipo"
-            app:backgroundTint="#FFD700"
-            android:textColor="#1a472a"
+            app:backgroundTint="@color/dorado"
+            android:textColor="@color/verde_fondo"
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/cardEstadisticas"
             app:layout_constraintStart_toStartOf="parent"

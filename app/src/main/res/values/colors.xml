@@ -2,4 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="verde_fondo">#1a472a</color>
+    <color name="verde_card">#2d6a4f</color>
+    <color name="dorado">#FFD700</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="verde_claro">#AAFFAA</color>
+    <color name="rojo">#C62828</color>
+
 </resources>
