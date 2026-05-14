@@ -35,6 +35,9 @@
             android:name=".DetalleJugadorActivity"
             android:exported="false">
         </activity>
+        <activity
+            android:name=".CompararJugadoresActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>

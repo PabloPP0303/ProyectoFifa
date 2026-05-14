@@ -110,9 +110,26 @@
         android:layout_height="70dp"
         android:layout_marginBottom="56dp"
         android:text="@string/miEquipo"
+        android:textColor="@color/verde_fondo"
+        android:textStyle="bold"
+        app:backgroundTint="@color/dorado"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnComparar"
+        android:layout_width="188dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/comparar_jugadores"
+        android:textColor="@color/verde_fondo"
+        app:backgroundTint="@color/dorado"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/btnMiEquipo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

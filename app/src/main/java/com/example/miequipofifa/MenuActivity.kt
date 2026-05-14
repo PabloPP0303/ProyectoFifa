@@ -16,6 +16,8 @@ class MenuActivity : AppCompatActivity() {
         val cardLaLiga = findViewById<CardView>(R.id.cardLaLiga)
         val cardPremier = findViewById<CardView>(R.id.cardPremier)
         val btnMiEquipo = findViewById<MaterialButton>(R.id.btnMiEquipo)
+        val btnComparar = findViewById<MaterialButton>(R.id.btnComparar)
+
 
         cardLaLiga.setOnClickListener {
             val intent = Intent(this, ListaJugadoresActivity::class.java)
@@ -31,6 +33,11 @@ class MenuActivity : AppCompatActivity() {
 
         btnMiEquipo.setOnClickListener {
             val intent = Intent(this, MiEquipoActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnComparar.setOnClickListener {
+            val intent = Intent(this, CompararJugadoresActivity::class.java)
             startActivity(intent)
         }
     }
