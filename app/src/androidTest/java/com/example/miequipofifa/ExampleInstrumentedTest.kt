@@ -82,7 +82,7 @@ class ExampleInstrumentedTest {
             .check(matches(isDisplayed()))
     }
 
-    // Test 7.1 - En la lista de jugadores el filtro POR funciona
+    // Test 7.1 - En la lista de jugadores el filtro MC funciona
 
 
     @Test

@@ -6,23 +6,26 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.miequipofifa.R
 
 class ListaJugadoresActivity : AppCompatActivity() {
 
     private lateinit var adapter: JugadorAdapter
+
+    //Lista sin filtros para poder reutilizarla
     private var listaCompleta: List<Jugador> = emptyList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lista_jugadores)
 
+        //Manda la liga seleccionada desde MenuActivity con intent explícito
+
         val liga = intent.getStringExtra("liga") ?: "Liga"
 
         val tituloLiga = findViewById<TextView>(R.id.nombreLiga)
         tituloLiga.text = "Jugadores de $liga"
 
-
+        //Usa el DataSource para filtrar por la liga
         listaCompleta = DataSource.getJugadoresPorLiga(liga)
 
         // Configurar RecyclerView

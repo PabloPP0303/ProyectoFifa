@@ -1,6 +1,5 @@
 package com.example.miequipofifa
 
-import com.example.miequipofifa.R
 
 object DataSource {
     fun getJugadoresPorLiga(liga: String): List<Jugador> {

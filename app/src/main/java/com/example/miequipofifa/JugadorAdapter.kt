@@ -12,6 +12,7 @@ class JugadorAdapter(
     private var listaJugadores: List<Jugador>
 ) : RecyclerView.Adapter<JugadorAdapter.JugadorViewHolder>() {
 
+    //Guarda los datos de las vistas de cada tarjeta
     inner class JugadorViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imgJugador: ImageView = itemView.findViewById(R.id.imgJugador)
         val tvNombre: TextView = itemView.findViewById(R.id.nombreJugador)
@@ -20,11 +21,15 @@ class JugadorAdapter(
         val tvValoracion: TextView = itemView.findViewById(R.id.valoracionJugador)
     }
 
+    // Convierte el layout
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): JugadorViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_jugador, parent, false)
         return JugadorViewHolder(view)
     }
+
+    //Rellena la tarjeta con los datos del jugador correspondiente
 
     override fun onBindViewHolder(holder: JugadorViewHolder, position: Int) {
         val jugador = listaJugadores[position]

@@ -9,6 +9,7 @@ object AdministrarMiEquipo {
 
     private val listaJugadores = mutableListOf<Jugador>()
 
+    //Añade el jugador y muestra los mensajes del enum
     fun añadirJugador(jugador: Jugador): ResultadoAdd {
         return when {
             listaJugadores.size >= 11 -> ResultadoAdd.LLENO
@@ -24,6 +25,7 @@ object AdministrarMiEquipo {
         listaJugadores.remove(jugador)
     }
 
+    //Crea una copia de la lista para no modificar la original y que pete
     fun getJugadores(): List<Jugador> = listaJugadores.toList()
 
     fun getSize(): Int = listaJugadores.size
