@@ -6,6 +6,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
 
 class DetalleJugadorActivity : AppCompatActivity() {
@@ -47,6 +49,16 @@ class DetalleJugadorActivity : AppCompatActivity() {
                     Toast.makeText(this, "Tu equipo ya tiene 11 jugadores", Toast.LENGTH_SHORT).show()
             }
         }
+
+        val relacionados = DataSource.getTodosLosJugadores().filter {
+            (it.posicion == jugador.posicion || it.club == jugador.club) && it.id != jugador.id
+        }.sortedByDescending { it.posicion == jugador.posicion }
+
+        val recyclerRelacionados = findViewById<RecyclerView>(R.id.recyclerRelacionados)
+        recyclerRelacionados.layoutManager = LinearLayoutManager(
+            this, LinearLayoutManager.HORIZONTAL, false
+        )
+        recyclerRelacionados.adapter = JugadorRelAdapter(relacionados)
 
     }
 }
