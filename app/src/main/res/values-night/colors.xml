@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="verde_fondo">#0d1b2a</color>
+    <color name="verde_card">#1b2a3b</color>
+    <color name="dorado">#FFA000</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="verde_claro">#90CAF9</color>
+    <color name="rojo">#C62828</color>
+</resources>
