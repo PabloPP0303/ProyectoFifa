@@ -21,9 +21,6 @@ class CompararJugadoresActivity : AppCompatActivity() {
     private lateinit var switchPremier: Switch
     private lateinit var switchLaLiga: Switch
 
-    private var actualizando1 = false
-    private var actualizando2 = false
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_comparar_jugadores)
@@ -53,7 +50,6 @@ class CompararJugadoresActivity : AppCompatActivity() {
         // Buscar jugador 1
         editBuscar1.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
-                if (actualizando1) return
                 val texto = s.toString().lowercase()
                 val filtrados = listaFiltrada1.filter {
                     it.nombre.lowercase().contains(texto)
@@ -64,10 +60,11 @@ class CompararJugadoresActivity : AppCompatActivity() {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
         })
 
+
+
         // Buscar jugador 2
         editBuscar2.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
-                if (actualizando2) return
                 val texto = s.toString().lowercase()
                 val filtrados = listaFiltrada2.filter {
                     it.nombre.lowercase().contains(texto)
@@ -77,30 +74,6 @@ class CompararJugadoresActivity : AppCompatActivity() {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
         })
-
-        spinner1.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
-                val jugador = parent.getItemAtPosition(position) as? Jugador
-                jugador?.let {
-                    actualizando1 = true
-                    editBuscar1.setText(it.nombre)
-                    actualizando1 = false
-                }
-            }
-            override fun onNothingSelected(parent: AdapterView<*>) {}
-        }
-
-        spinner2.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
-                val jugador = parent.getItemAtPosition(position) as? Jugador
-                jugador?.let {
-                    actualizando2 = true
-                    editBuscar2.setText(it.nombre)
-                    actualizando2 = false
-                }
-            }
-            override fun onNothingSelected(parent: AdapterView<*>) {}
-        }
 
         // Botón comparar
         findViewById<MaterialButton>(R.id.btnComparar).setOnClickListener {
@@ -141,7 +114,11 @@ class CompararJugadoresActivity : AppCompatActivity() {
             override fun getView(position: Int, convertView: View?, parent: android.view.ViewGroup): View {
                 val view = super.getView(position, convertView, parent)
                 (view as TextView).text = lista[position].nombre
-                view.setTextColor(resources.getColor(R.color.verde_fondo, null))
+                view.setTextColor(resources.getColor(R.color.dorado, null))
+                view.textSize = 20f
+                view.setTypeface(null, android.graphics.Typeface.BOLD)
+                view.setPadding(12,12,12,12)
+                view.setBackgroundColor(resources.getColor(R.color.verde_fondo))
                 return view
             }
             override fun getDropDownView(position: Int, convertView: View?,
